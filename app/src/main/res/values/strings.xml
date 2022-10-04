@@ -2,4 +2,6 @@
     <string name="app_name">PersistentBottomSheet</string>
     <string name="expanded">expanded</string>
     <string name="collapsed">collapsed</string>
+    <string name="pull_me_up">⬆️ Pull me up ️⬆️</string>
+    <string name="peekaboo">Peekaboo! 🥳</string>
 </resources>

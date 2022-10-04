@@ -32,4 +32,39 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Persistent Bottom Sheet -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/persistent_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#ebebeb"
+        android:padding="16dp"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="100dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <!-- PBS의 Contents -->
+        <TextView
+            android:id="@+id/tv_pull_me_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pull_me_up"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_peekaboo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/peekaboo"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pull_me_up" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
